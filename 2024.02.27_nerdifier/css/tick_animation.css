@@ -1,0 +1,13 @@
+.tick_animation_class {
+  animation: 50ms ease-in-out accentTick;
+}
+
+@keyframes accentTick {
+  from {
+    fill: var(--primary-color);
+  }
+
+  50% {
+    fill: var(--accent-color);
+  }
+}

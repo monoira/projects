@@ -1,0 +1,16 @@
+node_modules
+
+build/**/*
+dist/**/*
+vendor/**/*
+coverage/**/*
+docs/**/*
+public/**/*
+
+package-lock.json
+yarn.lock
+.vscode/**/*
+.idea/**/*
+.git/**/*
+*.min.js
+*.min.css

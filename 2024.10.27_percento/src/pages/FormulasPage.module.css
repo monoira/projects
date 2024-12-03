@@ -1,0 +1,12 @@
+.codesContainer {
+  padding-top: 16px;
+  border-top: var(--customBorder);
+}
+
+.topContainer {
+  margin: 0px 16px;
+}
+
+.formulaName {
+  margin-left: 16px;
+}

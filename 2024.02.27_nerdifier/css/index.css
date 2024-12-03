@@ -1,0 +1,168 @@
+/* || Importing External resources like fonts, etc */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap");
+
+/* || Importing css libraries */
+@import url("/node_modules/normalizecss/normalize.css");
+
+/* || Importing local css */
+@import url("/css/tick_animation.css");
+
+:root {
+  color-scheme: dark light;
+}
+
+/* Yes, both light and dark have same styling.
+I am just using prefers-colors-cheme here for testing */
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-color: rgb(43, 46, 74);
+    --secondary-color: rgb(30, 32, 34);
+    --bg-color: rgb(48, 56, 58);
+    --accent-color: rgb(131, 111, 255);
+
+    --text-color-white: rgb(255, 255, 255);
+    --text-color-black: rgb(45, 52, 54);
+    --box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
+  }
+  body {
+    color: var(--text-color-white);
+  }
+
+  #text_input {
+    background-color: var(--secondary-color);
+  }
+
+  #result_output {
+    background-color: var(--secondary-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: rgb(43, 46, 74);
+    --secondary-color: rgb(30, 32, 34);
+    --bg-color: rgb(48, 56, 58);
+    --accent-color: rgb(131, 111, 255);
+
+    --text-color-white: rgb(255, 255, 255);
+    --text-color-black: rgb(45, 52, 54);
+    --box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
+  }
+  body {
+    color: var(--text-color-white);
+  }
+
+  #text_input {
+    background-color: var(--secondary-color);
+  }
+
+  #result_output {
+    background-color: var(--secondary-color);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Noto Sans Georgian", sans-serif;
+  word-break: break-word;
+  word-wrap: break-word;
+  background-color: var(--bg-color);
+}
+
+::selection {
+  color: rgb(237, 241, 255);
+  background-color: rgb(158, 16, 48);
+}
+
+/* || CI COLOR CHANGE */
+
+li::marker {
+  color: rgb(255, 0, 0);
+}
+
+img,
+picture,
+video,
+audio,
+canvas,
+svg,
+embed {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  padding: 4px 8px;
+}
+
+/* || styles */
+
+.index_main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#text_input {
+  max-width: 100%;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  box-shadow: var(--box-shadow);
+}
+
+#text_input:focus {
+  outline: 2px solid var(--accent-color);
+}
+
+#text_input::placeholder {
+  text-align: center;
+}
+
+/* || CENTER ARROW */
+
+.center_arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 0px;
+
+  background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)),
+    url("/images/nerd_pic.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.center_arrow > svg {
+  fill: var(--primary-color);
+  width: 40vh;
+}
+
+/* || OUTPUT */
+
+#result_output {
+  min-height: 200px;
+}
+
+.copy_btn_container {
+  display: flex;
+  justify-content: end;
+}
+
+#copy_btn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+#output_section {
+  padding: 0px 8px;
+}

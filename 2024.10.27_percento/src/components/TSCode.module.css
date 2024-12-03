@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+}
+
+.copyBtn {
+  all: unset;
+  padding: 4px 10px;
+  position: absolute;
+  top: -8px;
+  right: 8px;
+  font-size: 0.6rem;
+
+  transition: 300ms;
+
+  color: var(--customBrilliantWhite);
+  background-color: var(--customInkwell);
+  border: 1px solid var(--customBrilliantWhite);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.copyBtn:hover {
+  translate: -4px;
+}

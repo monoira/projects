@@ -1,0 +1,10 @@
+.nav {
+  display: flex;
+  border-bottom: var(--customBorder);
+}
+
+.nav > a {
+  text-decoration: none;
+  padding: 8px;
+  border-right: var(--customBorder);
+}
