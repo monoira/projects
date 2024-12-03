@@ -1,7 +1,7 @@
 # Finished Projects Repository
 
 Most of those projects are and will be web projects
-with some backend and bash + GNU/Linux projects
+with some backend and bash + GNU/Linux projects.
 
 - USUAL TECH STACK
   - vite
