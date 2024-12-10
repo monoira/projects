@@ -77,8 +77,8 @@ body {
 }
 
 ::selection {
-  color: rgb(237, 241, 255);
-  background-color: rgb(158, 16, 48);
+  color: var(--secondary-color);
+  background-color: rgb(255, 255, 0);
 }
 
 /* || CI COLOR CHANGE */
