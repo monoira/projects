@@ -10,7 +10,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Layout from "./Layout.tsx";
+import RootLayout from "./RootLayout.tsx";
 
 const ErrorPage = lazy(() => import("./pages/ErrorPage.tsx"));
 const HomePage = lazy(() => import("./pages/HomePage.tsx"));
@@ -18,7 +18,7 @@ const FormulasPage = lazy(() => import("./pages/FormulasPage.tsx"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="/" element={<RootLayout />}>
       <Route index element={<HomePage />} />
 
       <Route path="/formulas">
