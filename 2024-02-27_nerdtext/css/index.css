@@ -8,57 +8,25 @@
 @import url("/css/tick_animation.css");
 
 :root {
-  color-scheme: dark light;
+  --primary-color: rgb(43, 46, 74);
+  --secondary-color: rgb(30, 32, 34);
+  --bg-color: rgb(48, 56, 58);
+  --accent-color: rgb(131, 111, 255);
+
+  --text-color-white: rgb(255, 255, 255);
+  --text-color-black: rgb(45, 52, 54);
+  --box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
+}
+body {
+  color: var(--text-color-white);
 }
 
-/* Yes, both light and dark have same styling.
-I am just using prefers-colors-cheme here for testing */
-@media (prefers-color-scheme: light) {
-  :root {
-    --primary-color: rgb(43, 46, 74);
-    --secondary-color: rgb(30, 32, 34);
-    --bg-color: rgb(48, 56, 58);
-    --accent-color: rgb(131, 111, 255);
-
-    --text-color-white: rgb(255, 255, 255);
-    --text-color-black: rgb(45, 52, 54);
-    --box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
-  }
-  body {
-    color: var(--text-color-white);
-  }
-
-  #text_input {
-    background-color: var(--secondary-color);
-  }
-
-  #result_output {
-    background-color: var(--secondary-color);
-  }
+#text_input {
+  background-color: var(--secondary-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: rgb(43, 46, 74);
-    --secondary-color: rgb(30, 32, 34);
-    --bg-color: rgb(48, 56, 58);
-    --accent-color: rgb(131, 111, 255);
-
-    --text-color-white: rgb(255, 255, 255);
-    --text-color-black: rgb(45, 52, 54);
-    --box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
-  }
-  body {
-    color: var(--text-color-white);
-  }
-
-  #text_input {
-    background-color: var(--secondary-color);
-  }
-
-  #result_output {
-    background-color: var(--secondary-color);
-  }
+#result_output {
+  background-color: var(--secondary-color);
 }
 
 *,
@@ -100,6 +68,7 @@ embed {
 
 button {
   padding: 4px 8px;
+  color: var(--text-color-black);
 }
 
 /* || styles */

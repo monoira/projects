@@ -5,22 +5,42 @@ const textOutput = document.querySelector("#output_section");
 const downwardsArrow = document.querySelector("#downwards_arrow");
 const copyBtn = document.querySelector("#copy_btn");
 
-function addTickAnimationClass() {
+/**
+ * adds tick animation class to downwardsArrow.
+ * animation lasts for hundreds of milliseconds
+ * and needs to be cleaned with cleanTickAnimationCssClass
+ * before next input for smooth animation
+ * @returns {void}
+ */
+function addTickAnimationCssClass() {
   downwardsArrow.classList.add("tick_animation_class");
 }
 
-// NOTE: this is to clean animation class INSTANTLY upon typing.
-// Need both remove and removeAfterDelay for arrow to work and look good
-function removeTickAnimationClass() {
+/**
+ * This is to clean animation class INSTANTLY upon typing
+ * both this and removeAfterDelay are needed for arrow to
+ * work and look good and be functional
+ * @returns {void}
+ */
+function cleanTickAnimationCssClass() {
   downwardsArrow.classList.remove("tick_animation_class");
 }
 
-function removeTickAnimationClassAfterDelay() {
+/**
+ * removes after delay for cool animation
+ * @returns {void}
+ */
+function removeTickAnimationCssClassAfterDelay() {
   setTimeout(() => {
     downwardsArrow.classList.remove("tick_animation_class");
   }, 100);
 }
 
+/**
+ * splits text into array, uppercase's every even character, joins into string again and returns it
+ * @param {string} text
+ * @returns {string}
+ */
 function nerdifyText(text) {
   return text
     .split("")
@@ -29,9 +49,9 @@ function nerdifyText(text) {
 }
 
 textInput.addEventListener("input", () => {
-  removeTickAnimationClass();
-  addTickAnimationClass();
-  removeTickAnimationClassAfterDelay();
+  cleanTickAnimationCssClass();
+  addTickAnimationCssClass();
+  removeTickAnimationCssClassAfterDelay();
 
   textOutput.textContent = String(nerdifyText(textInput.value));
 });
