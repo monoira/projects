@@ -18,7 +18,7 @@ function RootLayout() {
           minHeight: "100vh",
         }}
       >
-        <Suspense>
+        <Suspense fallback={<p>Loading...</p>}>
           <Outlet />
         </Suspense>
       </div>

@@ -10,11 +10,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import RootLayout from "./RootLayout.tsx";
-
-const ErrorPage = lazy(() => import("./pages/ErrorPage.tsx"));
+const RootLayout = lazy(() => import("./RootLayout.tsx"));
 const HomePage = lazy(() => import("./pages/HomePage.tsx"));
 const FormulasPage = lazy(() => import("./pages/FormulasPage.tsx"));
+const ErrorPage = lazy(() => import("./pages/ErrorPage.tsx"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
