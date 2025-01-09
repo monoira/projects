@@ -2,7 +2,6 @@ import { ThemeManager } from "./ThemeManager.js";
 import { dishesArray } from "./dishesArray.js";
 
 // || THEMING
-
 const themeManager = new ThemeManager();
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -23,7 +22,7 @@ themeToggleButton.addEventListener("click", () => themeManager.toggleTheme());
 // || dishes array grid
 const dishesGridSection = document.querySelector(".main__dishes-grid");
 
-function renderGridDishes(dishes) {
+function renderDishesInGrid(dishes) {
   dishesGridSection.innerHTML = "";
 
   for (let dish of dishes) {
@@ -45,15 +44,13 @@ function renderGridDishes(dishes) {
     dishesGridSection.append(gridItem);
   }
 }
-
-renderGridDishes(dishesArray);
+renderDishesInGrid(dishesArray);
 
 const dishesSearchInput = document.querySelector(".dishes-search-input");
-
 dishesSearchInput.addEventListener("input", () => {
   const searchValue = dishesSearchInput.value.toLowerCase();
   const filteredDishes = dishesArray.filter((dish) =>
     dish.name.toLowerCase().includes(searchValue),
   );
-  renderGridDishes(filteredDishes);
+  renderDishesInGrid(filteredDishes);
 });

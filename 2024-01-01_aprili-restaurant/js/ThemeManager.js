@@ -1,7 +1,6 @@
-// || side effects:
-// changes body classList
-// usesLocalStorage
-
+/** manages theme of the website by modifying <body> class.
+ * uses localStorage
+ * */
 export class ThemeManager {
   constructor() {
     this.defaultInitialTheme = "mode__dark";
