@@ -6,6 +6,12 @@ type SEO_component_type = {
   siteName?: string;
 };
 
+/**
+ * SEO component to manage metadata for specific webpages
+ * @param title title of the specific page (required)
+ * @param description description of the specific page (required)
+ * @param siteName default website name - DON'T modify this outside of SEO.tsx component
+ */
 export default function SEO({
   title,
   description,

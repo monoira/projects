@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
 
 const activeStyles: React.CSSProperties = {
-  backgroundColor: "var(--customMint)",
-  color: "var(--customBrilliantWhite)",
+  backgroundColor: "var(--clr-mint)",
+  color: "var(--clr-brilliantWhite)",
 };
 
 const navActiveStylesFunction = ({ isActive }: { isActive: boolean }) => {

@@ -1,10 +1,10 @@
 .nav {
   display: flex;
-  border-bottom: var(--customBorder);
+  border-bottom: var(--custom-border);
 }
 
 .nav > a {
   text-decoration: none;
   padding: 8px;
-  border-right: var(--customBorder);
+  border-right: var(--custom-border);
 }

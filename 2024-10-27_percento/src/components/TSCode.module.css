@@ -12,9 +12,9 @@
 
   transition: 300ms;
 
-  color: var(--customBrilliantWhite);
-  background-color: var(--customInkwell);
-  border: 1px solid var(--customBrilliantWhite);
+  color: var(--clr-brilliantWhite);
+  background-color: var(--clr-inkwell);
+  border: 1px solid var(--clr-brilliantWhite);
   border-radius: 8px;
   cursor: pointer;
 }

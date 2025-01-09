@@ -10,6 +10,10 @@ import { Fade } from "react-awesome-reveal";
 
 SyntaxHighlighter.registerLanguage("typescript", ts);
 
+/**
+ * @param code typescript code as a string
+ * @param name name of the typescript code snippet
+ */
 function TSCode({ code, name }: ITSFormula) {
   const copyCodeToClipboard = () => {
     copy(code);

@@ -8,25 +8,25 @@
 }
 
 :root {
-  --customEclipse: rgb(52, 49, 72);
-  --customNavyBlazer: rgb(40, 45, 60);
-  --customInkwell: rgb(54, 57, 69);
-  --customBrilliantWhite: rgb(237, 241, 255);
+  --clr-eclipse: rgb(52, 49, 72);
+  --clr-navyBlazer: rgb(40, 45, 60);
+  --clr-inkwell: rgb(54, 57, 69);
+  --clr-brilliantWhite: rgb(237, 241, 255);
 
-  --customUltimateGrey: rgb(147, 149, 151);
-  --customButterCream: rgb(239, 225, 206);
-  --customSweetCorn: rgb(240, 234, 214);
-  --customFrenchBlue: rgb(0, 114, 181);
-  --customSailorBlue: rgb(46, 74, 98);
-  --customMint: rgb(0, 161, 112);
-  --customEmerald: rgb(0, 155, 119);
-  --customUltramarineGreen: rgb(0, 107, 84);
-  --customLivingCoral: rgb(255, 111, 97);
-  --customFiredBrick: rgb(106, 46, 42);
-  --customMagentaPurple: rgb(108, 36, 76);
-  --customJesterRed: rgb(158, 16, 48);
+  --clr-ultimateGrey: rgb(147, 149, 151);
+  --clr-butterCream: rgb(239, 225, 206);
+  --clr-sweetCorn: rgb(240, 234, 214);
+  --clr-frenchBlue: rgb(0, 114, 181);
+  --clr-sailorBlue: rgb(46, 74, 98);
+  --clr-mint: rgb(0, 161, 112);
+  --clr-emerald: rgb(0, 155, 119);
+  --clr-ultramarineGreen: rgb(0, 107, 84);
+  --clr-livingCoral: rgb(255, 111, 97);
+  --clr-firedBrick: rgb(106, 46, 42);
+  --clr-magentaPurple: rgb(108, 36, 76);
+  --clr-jesterRed: rgb(158, 16, 48);
 
-  --customBorder: 2px solid rgb(0, 0, 0);
+  --custom-border: 2px solid rgb(0, 0, 0);
 }
 
 html {
@@ -40,18 +40,18 @@ html {
 }
 
 body {
-  background-color: var(--customBrilliantWhite);
-  color: var(--customEclipse);
+  background-color: var(--clr-brilliantWhite);
+  color: var(--clr-eclipse);
 }
 
 input {
   width: 100%;
-  border: var(--customBorder);
+  border: var(--custom-border);
   border-radius: 8px;
   padding-left: 8px;
 }
 
 ::selection {
-  color: var(--customBrilliantWhite);
-  background-color: var(--customJesterRed);
+  color: var(--clr-brilliantWhite);
+  background-color: var(--clr-jesterRed);
 }
