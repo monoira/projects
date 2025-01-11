@@ -8,7 +8,7 @@ export default {
   plugins: [
     // || automatic sitemap generation
     Sitemap({
-      hostname: "https://nerdtext.pages.dev/",
+      hostname: "https://nerdnerdnerd.pages.dev/",
     }),
 
     // || image compression. happens when using "npm run build"
