@@ -5,15 +5,17 @@ with some backend and bash + GNU/Linux projects.
 
 ## USUAL TECH STACK
 
-- vite
-- react w/ typescript
+| Tech                    | Name                |
+| ----------------------- | ------------------- |
+| **Frontend build tool** | vite                |
+| **Frontend**            | react w/ typescript |
+| **Backend**             | express             |
+| **Containerization**    | docker              |
+| **Formatter**           | prettier            |
+| **Linter**              | eslint              |
+
+- MISC
   - MUI
   - react-router-dom
   - react-hot-toast
-- express
-- docker
-
-## MISC
-
-- formatter: prettier
-- vite-plugin-image-optimizer
+  - vite-plugin-image-optimizer
