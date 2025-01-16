@@ -9,7 +9,7 @@ export default {
   plugins: [
     // || automatic sitemap generation
     Sitemap({
-      hostname: "https://aprili-restaurant.pages.dev/",
+      hostname: "https://restoaprili.pages.dev/",
     }),
 
     // || image compression. happens when using "npm run build"
