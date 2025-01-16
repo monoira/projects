@@ -16,7 +16,7 @@ export default defineConfig({
 
     // || automatic sitemap generation
     Sitemap({
-      hostname: "https://percentagecalculator.netlify.app",
+      hostname: "https://oraoracalc.pages.dev/",
       dynamicRoutes: routes,
     }),
 

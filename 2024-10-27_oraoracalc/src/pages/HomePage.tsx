@@ -28,7 +28,7 @@ function HomePage() {
   return (
     <>
       <SEO
-        title="Percento - Percentage Calculator And Typescript Math Snippets"
+        title="OraOraCalc - Percentage Calculator And Typescript Math Snippets"
         description="Your All-In-One Tool For Quick Percentage Calculations And TypeScript Math Exploration. Simple & Effective"
       />
       <main style={mainStyles}>
@@ -40,6 +40,7 @@ function HomePage() {
               }}
             >
               <input
+                aria-label="percentage of total number"
                 type="number"
                 name="percentage"
                 defaultValue={formData.percentage}
@@ -50,6 +51,7 @@ function HomePage() {
             <div style={spanStyles}>of</div>
           </div>
           <input
+            aria-label="total number you want to get percentage of"
             type="number"
             name="number"
             defaultValue={formData.number}

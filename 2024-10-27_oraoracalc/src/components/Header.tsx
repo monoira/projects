@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 
 const activeStyles: React.CSSProperties = {
   backgroundColor: "var(--clr-mint)",
-  color: "var(--clr-brilliantWhite)",
+  color: "var(--clr-white)",
 };
 
 const navActiveStylesFunction = ({ isActive }: { isActive: boolean }) => {

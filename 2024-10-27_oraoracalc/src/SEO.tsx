@@ -15,7 +15,7 @@ type SEO_component_type = {
 export default function SEO({
   title,
   description,
-  siteName = "percento",
+  siteName = "OraOraCalc",
 }: SEO_component_type) {
   return (
     <Helmet>

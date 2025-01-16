@@ -8,7 +8,7 @@ function FormulasPage() {
   return (
     <>
       <SEO
-        title="Percento Formulas - Math Formula Snippets Written In Typescript"
+        title="OraOraCalc Formulas - Math Formula Snippets Written In Typescript"
         description="Quickly Calculate Percentages And Explore Practical TypeScript Math Implementations. Ideal For Students And Developers"
       />
 

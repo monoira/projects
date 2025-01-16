@@ -4,7 +4,8 @@ import styles from "./TSCode.module.css";
 
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import ts from "react-syntax-highlighter/dist/esm/languages/hljs/typescript";
-import nord from "react-syntax-highlighter/dist/esm/styles/hljs/nord";
+import obsidian from "react-syntax-highlighter/dist/esm/styles/hljs/obsidian";
+
 import toast from "react-hot-toast";
 import { Fade } from "react-awesome-reveal";
 
@@ -33,7 +34,7 @@ function TSCode({ code, name }: ITSFormula) {
       <SyntaxHighlighter
         className={styles.codeStyles}
         language="typescript"
-        style={nord}
+        style={obsidian}
       >
         {code}
       </SyntaxHighlighter>

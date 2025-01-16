@@ -8,6 +8,8 @@
 }
 
 :root {
+  --clr-white: rgb(255, 255, 255);
+  --clr-black: rgb(0, 0, 0);
   --clr-eclipse: rgb(52, 49, 72);
   --clr-navyBlazer: rgb(40, 45, 60);
   --clr-inkwell: rgb(54, 57, 69);
