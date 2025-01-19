@@ -1,6 +1,6 @@
 @import url("/node_modules/normalizecss/normalize.css");
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@300..700&display=swap");
 
 .mode__dark {
   /* colors */
