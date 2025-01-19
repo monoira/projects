@@ -38,6 +38,7 @@ function renderDishesInGrid(dishes) {
     const gridItemImgContainer = document.createElement("div");
     const gridItemImg = document.createElement("img");
     gridItemImg.setAttribute("src", dish.relative_url);
+    gridItemImg.setAttribute("alt", dish.name);
     gridItemImgContainer.append(gridItemImg);
 
     gridItem.append(gridItemName, gridItemImgContainer);
