@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { IFormData } from "../types/types";
+import type { FormData } from "../types/types";
 import SEO from "../SEO";
 
 const mainStyles: React.CSSProperties = {
@@ -13,7 +13,7 @@ const spanStyles: React.CSSProperties = {
 };
 
 function HomePage() {
-  const [formData, setFormData] = useState<IFormData>({
+  const [formData, setFormData] = useState<FormData>({
     percentage: 20,
     number: 200,
   });

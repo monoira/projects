@@ -1,9 +1,4 @@
-export interface IFormData {
+export interface FormData {
   percentage: number;
   number: number;
-}
-
-export interface ITSFormula {
-  name: string;
-  code: string;
 }

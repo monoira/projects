@@ -1,5 +1,4 @@
 import copy from "copy-to-clipboard";
-import type { ITSFormula } from "../types/types";
 import styles from "./TSCode.module.css";
 
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -11,11 +10,16 @@ import { Fade } from "react-awesome-reveal";
 
 SyntaxHighlighter.registerLanguage("typescript", ts);
 
+export interface TypescriptFormulaProps {
+  name: string;
+  code: string;
+}
+
 /**
  * @param code typescript code as a string
  * @param name name of the typescript code snippet
  */
-function TSCode({ code, name }: ITSFormula) {
+function TypescriptCode({ code, name }: TypescriptFormulaProps) {
   const copyCodeToClipboard = () => {
     copy(code);
 
@@ -42,4 +46,4 @@ function TSCode({ code, name }: ITSFormula) {
   );
 }
 
-export default TSCode;
+export default TypescriptCode;

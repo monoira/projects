@@ -1,4 +1,4 @@
-import TSCode from "../components/TSCode";
+import TypescriptCode from "../components/TSCode";
 import { formulasArray } from "../data/formulas";
 import SEO from "../SEO";
 
@@ -32,7 +32,7 @@ function FormulasPage() {
         {formulasArray.map((formula, i) => (
           <div key={i} className={styles.codesContainer}>
             <b className={styles.formulaName}>{formula.name}:</b>
-            <TSCode name={formula.name} code={formula.code} />
+            <TypescriptCode name={formula.name} code={formula.code} />
           </div>
         ))}
       </main>
