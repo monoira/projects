@@ -104,7 +104,8 @@ button {
   align-items: center;
   margin: 2px 0px;
 
-  background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)),
+  background:
+    linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)),
     url("/images/nerd_pic.jpg");
   background-size: cover;
   background-position: center center;

@@ -14,7 +14,7 @@ with some backend and bash + GNU/Linux projects.
 | **Formatter**           | prettier            |
 | **Linter**              | eslint              |
 
-- MISC
+- **MISC**
   - MUI
   - react-router-dom
   - react-hot-toast
