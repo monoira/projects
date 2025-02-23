@@ -1,0 +1,8 @@
+.main {
+  padding: clamp(20px, 10%, 40px);
+  text-align: center;
+  font-size: 2rem;
+}
+.span {
+  padding: 8px;
+}

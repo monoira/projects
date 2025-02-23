@@ -1,14 +1,9 @@
-import copy from "copy-to-clipboard";
 import styles from "./TSCode.module.css";
 
-import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import ts from "react-syntax-highlighter/dist/esm/languages/hljs/typescript";
-import obsidian from "react-syntax-highlighter/dist/esm/styles/hljs/obsidian";
-
+import copy from "copy-to-clipboard";
 import toast from "react-hot-toast";
 import { Fade } from "react-awesome-reveal";
-
-SyntaxHighlighter.registerLanguage("typescript", ts);
+import ShikiHighlighter from "react-shiki";
 
 export interface TypescriptFormulaProps {
   name: string;
@@ -35,13 +30,13 @@ function TypescriptCode({ code, name }: TypescriptFormulaProps) {
       <button onMouseDown={copyCodeToClipboard} className={styles.copyBtn}>
         Copy
       </button>
-      <SyntaxHighlighter
-        className={styles.codeStyles}
-        language="typescript"
-        style={obsidian}
+      <ShikiHighlighter
+        language="ts"
+        theme="catppuccin-mocha"
+        showLanguage={false}
       >
         {code}
-      </SyntaxHighlighter>
+      </ShikiHighlighter>
     </Fade>
   );
 }

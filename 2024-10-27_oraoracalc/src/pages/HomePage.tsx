@@ -1,16 +1,7 @@
 import { useState } from "react";
 import type { FormData } from "../types/types";
+import styles from "./HomePage.module.css";
 import SEO from "../SEO";
-
-const mainStyles: React.CSSProperties = {
-  padding: "clamp(20px, 10%, 40px)",
-  textAlign: "center",
-  fontSize: "2rem",
-};
-
-const spanStyles: React.CSSProperties = {
-  padding: "8px",
-};
 
 function HomePage() {
   const [formData, setFormData] = useState<FormData>({
@@ -31,7 +22,7 @@ function HomePage() {
         title="OraOraCalc - Percentage Calculator And Typescript Math Snippets"
         description="Your All-In-One Tool For Quick Percentage Calculations And TypeScript Math Exploration. Simple & Effective"
       />
-      <main style={mainStyles}>
+      <main className={styles.main}>
         <div>
           <div>
             <div
@@ -46,9 +37,9 @@ function HomePage() {
                 defaultValue={formData.percentage}
                 onChange={handleInputChange}
               />
-              <span style={spanStyles}>%</span>
+              <span className={styles.span}>%</span>
             </div>
-            <div style={spanStyles}>of</div>
+            <div className={styles.span}>of</div>
           </div>
           <input
             aria-label="total number you want to get percentage of"
@@ -57,7 +48,7 @@ function HomePage() {
             defaultValue={formData.number}
             onChange={handleInputChange}
           />
-          <div style={spanStyles}>is</div>
+          <div className={styles.span}>is</div>
         </div>
 
         <div>
