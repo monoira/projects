@@ -217,33 +217,24 @@ body {
 
 @media (min-width: 0px) {
   .main__img-section {
-    background-image: linear-gradient(
-        to right,
-        rgba(40, 45, 60, 0.5),
-        rgba(40, 45, 60, 0.6)
-      ),
+    background-image:
+      linear-gradient(to right, rgba(40, 45, 60, 0.5), rgba(40, 45, 60, 0.6)),
       url("/images/geo_1280x853.jpg");
   }
 }
 
 @media (min-width: 640px) {
   .main__img-section {
-    background-image: linear-gradient(
-        to right,
-        rgba(40, 45, 60, 0.5),
-        rgba(40, 45, 60, 0.6)
-      ),
+    background-image:
+      linear-gradient(to right, rgba(40, 45, 60, 0.5), rgba(40, 45, 60, 0.6)),
       url("/images/geo_1920x1280.jpg");
   }
 }
 
 @media (min-width: 1280px) {
   .main__img-section {
-    background-image: linear-gradient(
-        to right,
-        rgba(40, 45, 60, 0.5),
-        rgba(40, 45, 60, 0.6)
-      ),
+    background-image:
+      linear-gradient(to right, rgba(40, 45, 60, 0.5), rgba(40, 45, 60, 0.6)),
       url("/images/geo_5550x3700.jpg");
   }
 }
