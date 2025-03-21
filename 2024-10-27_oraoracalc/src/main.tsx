@@ -11,20 +11,20 @@ import {
 } from "react-router-dom";
 
 const RootLayout = lazy(() => import("./RootLayout.tsx"));
-const HomePage = lazy(() => import("./pages/HomePage.tsx"));
-const FormulasPage = lazy(() => import("./pages/FormulasPage.tsx"));
-const ErrorPage = lazy(() => import("./pages/ErrorPage.tsx"));
+const HomeRoute = lazy(() => import("./routes/HomeRoute.tsx"));
+const FormulasRoute = lazy(() => import("./routes/FormulasRoute.tsx"));
+const ErrorRoute = lazy(() => import("./routes/ErrorRoute.tsx"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route index element={<HomePage />} />
+      <Route index element={<HomeRoute />} />
 
       <Route path="/formulas">
-        <Route index element={<FormulasPage />} />
+        <Route index element={<FormulasRoute />} />
       </Route>
 
-      <Route path="*" element={<ErrorPage />} />
+      <Route path="*" element={<ErrorRoute />} />
     </Route>,
   ),
 );

@@ -1,12 +1,8 @@
-.container {
-  position: relative;
-}
-
 .copyBtn {
-  padding: 4px 10px;
-  position: absolute;
-  top: 16px;
-  right: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: 5px;
+  padding: 8px 10px;
   font-size: 0.6rem;
 
   transition: 300ms;
@@ -20,4 +16,12 @@
 
 .copyBtn:hover {
   translate: -4px;
+}
+
+.highlighter {
+  margin-top: 0px;
+}
+
+.highlighter > * {
+  margin-top: 0px;
 }

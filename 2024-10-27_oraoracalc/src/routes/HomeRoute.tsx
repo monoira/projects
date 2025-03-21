@@ -1,9 +1,9 @@
 import { useState } from "react";
 import type { FormData } from "../types/types";
-import styles from "./HomePage.module.css";
+import styles from "./HomeRoute.module.css";
 import SEO from "../SEO";
 
-function HomePage() {
+function HomeRoute() {
   const [formData, setFormData] = useState<FormData>({
     percentage: 20,
     number: 200,
@@ -58,4 +58,4 @@ function HomePage() {
     </>
   );
 }
-export default HomePage;
+export default HomeRoute;

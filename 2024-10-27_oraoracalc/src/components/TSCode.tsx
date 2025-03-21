@@ -26,14 +26,15 @@ function TypescriptCode({ code, name }: TypescriptFormulaProps) {
   };
 
   return (
-    <Fade triggerOnce className={styles.container}>
-      <button onMouseDown={copyCodeToClipboard} className={styles.copyBtn}>
+    <Fade triggerOnce>
+      <button onClick={copyCodeToClipboard} className={styles.copyBtn}>
         Copy
       </button>
       <ShikiHighlighter
         language="ts"
         theme="catppuccin-mocha"
         showLanguage={false}
+        className={styles.highlighter}
       >
         {code}
       </ShikiHighlighter>

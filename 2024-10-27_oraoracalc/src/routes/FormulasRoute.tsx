@@ -2,9 +2,9 @@ import TypescriptCode from "../components/TSCode";
 import { formulasArray } from "../data/formulas";
 import SEO from "../SEO";
 
-import styles from "./FormulasPage.module.css";
+import styles from "./FormulasRoute.module.css";
 
-function FormulasPage() {
+function FormulasRoute() {
   return (
     <>
       <SEO
@@ -31,7 +31,7 @@ function FormulasPage() {
       <main>
         {formulasArray.map((formula, i) => (
           <div key={i} className={styles.codesContainer}>
-            <b className={styles.formulaName}>{formula.name}:</b>
+            <h3 className={styles.formulaName}>{formula.name}:</h3>
             <TypescriptCode name={formula.name} code={formula.code} />
           </div>
         ))}
@@ -40,4 +40,4 @@ function FormulasPage() {
   );
 }
 
-export default FormulasPage;
+export default FormulasRoute;
