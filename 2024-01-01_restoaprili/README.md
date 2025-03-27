@@ -29,7 +29,6 @@ Restaurant website
 ### dev dependencies
 
 - vite-plugin-image-optimizer - optimizes images in `public` dir on build
-- vite-plugin-sitemap - generates sitemap automatically on build
 - prettier
 
 ## fonts
