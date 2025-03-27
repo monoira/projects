@@ -42,7 +42,6 @@ Simple javascript and typescript math formulas and sorting algorithms
 ### dev dependencies
 
 - vite-plugin-image-optimizer - optimizes images in `public` dir on build
-- vite-plugin-sitemap - generates sitemap automatically on build
 - eslint
 - prettier
 
