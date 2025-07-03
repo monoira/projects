@@ -1,7 +1,7 @@
 # Finished projects monorepo repository
 
-Most of those projects are and will be web projects,
-with some backend and bash + GNU/Linux projects.
+Most of those projects are and will be web projects
+with some bash + GNU/Linux projects.
 
 ## USUAL TECH STACK
 

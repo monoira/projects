@@ -1,7 +1,5 @@
 # TABLE OF CONTENTS
 
-<!--toc:start-->
-
 - [TABLE OF CONTENTS](#table-of-contents)
   - [website description](#website-description)
   - [build tool](#build-tool)
@@ -10,7 +8,6 @@
     - [dev dependencies](#dev-dependencies)
   - [fonts](#fonts)
   - [more info](#more-info)
-  <!--toc:end-->
 
 ## website description
 

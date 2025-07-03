@@ -106,7 +106,7 @@ button {
 
   background:
     linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)),
-    url("/images/nerd_pic.jpg");
+    url("/images/nerd.jpg");
   background-size: cover;
   background-position: center center;
 }
