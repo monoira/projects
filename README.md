@@ -16,7 +16,7 @@ with some bash + GNU/Linux projects.
 
 - **MISC**
   - MUI
-  - react-router-dom
+  - react-router
   - react-hot-toast
   - vite-plugin-image-optimizer
 

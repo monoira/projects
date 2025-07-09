@@ -1,14 +1,13 @@
-import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "react-hot-toast";
 import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function RootLayout() {
   return (
-    <HelmetProvider>
+    <>
       <Header />
 
       <Toaster position="top-center" />
@@ -24,7 +23,7 @@ function RootLayout() {
       </div>
 
       <Footer />
-    </HelmetProvider>
+    </>
   );
 }
 

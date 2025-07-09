@@ -8,7 +8,7 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
-} from "react-router-dom";
+} from "react-router";
 
 const RootLayout = lazy(() => import("./RootLayout.tsx"));
 const HomeRoute = lazy(() => import("./routes/HomeRoute.tsx"));

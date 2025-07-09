@@ -32,9 +32,8 @@ Simple javascript and typescript math formulas and sorting algorithms
 - copy-to-clipboard - copying text to clipboard
 - react-awesome-reveal - reveal page sections with cool animation
 - react-syntax-highlighter - syntax highlighter needed for typescript code
-- react-helmet-async - for SEO
 - react-hot-toast - for notifications
-- react-router-dom - routing
+- react-router - routing
 
 ### dev dependencies
 
