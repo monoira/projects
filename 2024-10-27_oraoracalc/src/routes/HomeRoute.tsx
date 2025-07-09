@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { FormData } from "../types/types";
 import styles from "./HomeRoute.module.css";
-import SEO from "../SEO";
+import SEO from "../components/SEO";
 
 function HomeRoute() {
   const [formData, setFormData] = useState<FormData>({

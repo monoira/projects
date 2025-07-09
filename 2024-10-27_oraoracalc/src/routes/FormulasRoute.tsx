@@ -1,6 +1,6 @@
 import TypescriptCode from "../components/TSCode";
 import { formulasArray } from "../data/formulas";
-import SEO from "../SEO";
+import SEO from "../components/SEO";
 
 import styles from "./FormulasRoute.module.css";
 
