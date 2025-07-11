@@ -3,7 +3,10 @@ import styles from "./Footer.module.css";
 function Footer() {
   return (
     <footer className={styles.footer}>
-      {`Copyright by Irakli Tatarashvili - ${new Date().getFullYear()}`}
+      <span>
+        Created by <a href="https://www.github.com/monoira">monoira</a> -
+      </span>
+      <span> {new Date().getFullYear()}</span>
     </footer>
   );
 }
