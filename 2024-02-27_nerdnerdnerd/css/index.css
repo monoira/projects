@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap");
 @import "modern-normalize/modern-normalize.css";
-@import url("/css/tick_animation.css");
+@import url("tick_animation.css");
 
 :root {
   --clr-primary: rgb(43, 46, 74);
