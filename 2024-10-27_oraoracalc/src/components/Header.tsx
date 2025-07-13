@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 import styles from "./Header.module.css";
 
 const activeStyles: React.CSSProperties = {
-  backgroundColor: "var(--clr-mint)",
+  backgroundColor: "var(--clr-primary)",
   color: "var(--clr-white)",
 };
 

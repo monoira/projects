@@ -7,9 +7,9 @@
 
   transition: 300ms;
 
-  color: var(--clr-brilliantWhite);
-  background-color: var(--clr-inkwell);
-  border: 1px solid var(--clr-brilliantWhite);
+  color: var(--text-white);
+  background-color: var(--clr-secondary);
+  border: 1px solid var(--text-white);
   border-radius: 8px;
   cursor: pointer;
 }
