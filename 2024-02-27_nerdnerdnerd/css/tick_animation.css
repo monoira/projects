@@ -4,10 +4,10 @@
 
 @keyframes accentTick {
   from {
-    fill: var(--primary-color);
+    fill: var(--clr-primary);
   }
 
   50% {
-    fill: var(--accent-color);
+    fill: var(--clr-accentr);
   }
 }

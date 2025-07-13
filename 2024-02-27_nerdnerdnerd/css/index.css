@@ -1,32 +1,27 @@
-/* || Importing External resources like fonts, etc */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap");
-
-/* || Importing css libraries */
 @import "modern-normalize/modern-normalize.css";
-
-/* || Importing local css */
 @import url("/css/tick_animation.css");
 
 :root {
-  --primary-color: rgb(43, 46, 74);
-  --secondary-color: rgb(30, 32, 34);
-  --bg-color: rgb(48, 56, 58);
-  --accent-color: rgb(131, 111, 255);
+  --clr-primary: rgb(43, 46, 74);
+  --clr-secondary: rgb(30, 32, 34);
+  --clr-bg: rgb(48, 56, 58);
+  --clr-accentr: rgb(131, 111, 255);
 
-  --text-color-white: rgb(255, 255, 255);
-  --text-color-black: rgb(45, 52, 54);
-  --box-shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
+  --text-white: rgb(255, 255, 255);
+  --text-black: rgb(45, 52, 54);
+  --shadow: rgba(255, 255, 255, 0.1) 0px 7px 29px 0px;
 }
 body {
-  color: var(--text-color-white);
+  color: var(--text-white);
 }
 
 #text_input {
-  background-color: var(--secondary-color);
+  background-color: var(--clr-secondary);
 }
 
 #result_output {
-  background-color: var(--secondary-color);
+  background-color: var(--clr-secondary);
 }
 
 *,
@@ -41,11 +36,12 @@ body {
   font-family: "Noto Sans Georgian", sans-serif;
   word-break: break-word;
   word-wrap: break-word;
-  background-color: var(--bg-color);
+  background-color: var(--clr-bg);
+  color: var(--text-white);
 }
 
 ::selection {
-  color: var(--secondary-color);
+  color: var(--clr-secondary);
   background-color: rgb(255, 255, 0);
 }
 
@@ -68,7 +64,7 @@ embed {
 
 button {
   padding: 4px 8px;
-  color: var(--text-color-black);
+  color: var(--text-black);
 }
 
 /* || styles */
@@ -85,11 +81,11 @@ button {
   width: 100%;
   padding: 8px;
   border: none;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--shadow);
 }
 
 #text_input:focus {
-  outline: 2px solid var(--accent-color);
+  outline: 2px solid var(--clr-accentr);
 }
 
 #text_input::placeholder {
@@ -112,7 +108,7 @@ button {
 }
 
 .center_arrow > svg {
-  fill: var(--primary-color);
+  fill: var(--clr-primary);
   width: 40vh;
 }
 
