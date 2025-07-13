@@ -21,7 +21,7 @@ Restaurant website
 
 ### normal
 
-- normalize.css
+- modern-normalize
 
 ### dev dependencies
 

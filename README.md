@@ -1,18 +1,18 @@
-# Finished projects monorepo repository
+# Finished Projects Monorepo Repository
 
 Most of those projects are and will be web projects
 with some bash + GNU/Linux projects.
 
 ## USUAL TECH STACK
 
-| Tech                    | Name                |
-| ----------------------- | ------------------- |
-| **Frontend build tool** | vite                |
-| **Frontend**            | react w/ typescript |
-| **Backend**             | express             |
-| **Containerization**    | docker              |
-| **Formatter**           | prettier            |
-| **Linter**              | eslint              |
+| Tech                    | Name                  |
+| ----------------------- | --------------------- |
+| **Frontend Build Tool** | vite                  |
+| **Frontend**            | react w/ typescript   |
+| **Backend**             | express w/ typescript |
+| **Containerization**    | docker                |
+| **Formatter**           | prettier              |
+| **Linter**              | eslint                |
 
 - **MISC**
   - MUI

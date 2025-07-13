@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap");
 
 /* || Importing css libraries */
-@import url("/node_modules/normalizecss/normalize.css");
+@import "modern-normalize/modern-normalize.css";
 
 /* || Importing local css */
 @import url("/css/tick_animation.css");

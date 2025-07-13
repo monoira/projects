@@ -22,7 +22,7 @@ eg: "gold" into "gOlD"
 
 ### normal
 
-- normalize.css
+- modern-normalize
 - copy-to-clipboard
 
 ### dev dependencies

@@ -28,7 +28,7 @@ Simple javascript and typescript math formulas and sorting algorithms
 
 ### normal
 
-- normalize.css - css reset
+- modern-normalize - css reset
 - copy-to-clipboard - copying text to clipboard
 - react-awesome-reveal - reveal page sections with cool animation
 - react-syntax-highlighter - syntax highlighter needed for typescript code
