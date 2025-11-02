@@ -5,14 +5,14 @@ with some bash + GNU/Linux projects.
 
 ## USUAL TECH STACK
 
-| Tech                    | Name                  |
-| ----------------------- | --------------------- |
-| **Frontend Build Tool** | vite                  |
-| **Frontend**            | react w/ typescript   |
-| **Backend**             | express w/ typescript |
-| **Containerization**    | docker                |
-| **Formatter**           | prettier              |
-| **Linter**              | eslint                |
+| Tech                    | Name                 |
+| ----------------------- | -------------------- |
+| **Frontend Build Tool** | vite                 |
+| **Frontend**            | react w/ typescript  |
+| **Backend**             | nestjs w/ typescript |
+| **Containerization**    | docker               |
+| **Formatter**           | prettier             |
+| **Linter**              | eslint               |
 
 - **MISC**
   - MUI
