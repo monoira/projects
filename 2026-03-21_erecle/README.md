@@ -7,6 +7,7 @@ into more readable, cleaner and easily bookmarkable format.
   - [EXAMPLE](#example)
   - [SHOWCASE VIDEO ON YOUTUBE](#showcase-video-on-youtube)
   - [TECH USED](#tech-used)
+  - [DONATE](#donate)
 
 ## EXAMPLE
 
@@ -34,3 +35,16 @@ _icons generated via:_
 ```bash
 for size in 16 32 48 96 128; do magick icon.png -resize ${size}x${size} ${size}.png; done
 ```
+
+## DONATE
+
+I've been creating FOSS / GNU/Linux / nvim / web
+related software for some time now.  
+If you used, forked or took code from one of my projects and you
+would like to support me 👍,  
+you can donate here:
+
+| type                | address                                    |
+| ------------------- | ------------------------------------------ |
+| Bitcoin (SegWit)    | bc1ql8sp9shx4svzlwv0ckzv8s7pphw5upvmt8m2m7 |
+| Ethereum (Ethereum) | 0xf2FCB0Af39DF7A608b76297e45181aF23fEB939F |

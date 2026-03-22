@@ -1,6 +1,6 @@
 {
   "name": "erecle",
-  "description": "ereader-url-cleaner is an extension that cleans amazon kindle URLs by removing excess url parameters into more readable, cleaner and easily bookmarkable format.",
+  "description": "ereader-url-cleaner cleans amazon kindle URLs by removing excess URL parameters.",
   "private": true,
   "version": "0.0.1",
   "type": "module",
