@@ -1,8 +1,8 @@
 {
-  "name": "wxt-react-starter",
-  "description": "manifest.json description",
+  "name": "erecle",
+  "description": "ereader-url-cleaner is an extension that cleans amazon kindle URLs by removing excess url parameters into more readable, cleaner and easily bookmarkable format.",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "wxt",
