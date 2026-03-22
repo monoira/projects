@@ -7,7 +7,7 @@ export default defineConfig({
   manifest: {
     description:
       "Cleans Amazon Kindle URLs by removing excess parameters for a cleaner, more readable and bookmarkable format.",
-    permissions: ["activeTab", "scripting"],
+    permissions: ["activeTab"],
     host_permissions: amazonUrls as unknown as string[],
     host_permissions_reason:
       "The extension accesses amazon.com and regional amazon sites to identify and clean Kindle book URLs by removing tracking and session parameters, making the URLs cleaner and more bookmarkable.",
