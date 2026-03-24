@@ -18,7 +18,7 @@ TO:
 `https://www.amazon.com/Skin-Game-Hidden-Asymmetries-Daily-ebook/dp/B075HYVP7C`
 
 Works with all amazon websites, like `.com`, `.co.uk`, etc that are listed here:  
-[websites](./constants/amazonUrls.ts)
+[websites](https://github.com/monoira/projects/blob/main/2026-03-21_erecle/constants/amazonUrls.ts)
 
 ## SHOWCASE VIDEO ON YOUTUBE
 
