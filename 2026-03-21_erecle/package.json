@@ -1,8 +1,8 @@
 {
-  "name": "Erecle",
-  "description": "ereader-url-cleaner cleans amazon kindle URLs by removing excess URL parameters.",
+  "name": "erecle",
+  "description": "Ereader-URL-Cleaner cleans amazon kindle URLs by removing excess URL parameters.",
   "private": true,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "scripts": {
     "dev": "wxt",
