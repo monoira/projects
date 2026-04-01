@@ -10,6 +10,7 @@ with some bash + GNU/Linux projects.
 | **Frontend Build Tool** | vite                 |
 | **Frontend**            | react w/ typescript  |
 | **Backend**             | nestjs w/ typescript |
+| **Web Extensions**      | WXT                  |
 | **Containerization**    | docker               |
 | **Formatter**           | prettier             |
 | **Linter**              | eslint               |
