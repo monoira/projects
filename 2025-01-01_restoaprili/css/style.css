@@ -219,7 +219,7 @@ body {
   .main__img-section {
     background-image:
       linear-gradient(to right, rgba(40, 45, 60, 0.5), rgba(40, 45, 60, 0.6)),
-      url("/images/geo_1280x853.jpg");
+      url("/images/hero_1280x853.jpg");
   }
 }
 
@@ -227,7 +227,7 @@ body {
   .main__img-section {
     background-image:
       linear-gradient(to right, rgba(40, 45, 60, 0.5), rgba(40, 45, 60, 0.6)),
-      url("/images/geo_1920x1280.jpg");
+      url("/images/hero_1920x1280.jpg");
   }
 }
 
@@ -235,7 +235,7 @@ body {
   .main__img-section {
     background-image:
       linear-gradient(to right, rgba(40, 45, 60, 0.5), rgba(40, 45, 60, 0.6)),
-      url("/images/geo_5550x3700.jpg");
+      url("/images/hero_5550x3700.jpg");
   }
 }
 
