@@ -7,6 +7,7 @@ into more readable, cleaner and easily bookmarkable format.
   - [EXAMPLE](#example)
   - [SHOWCASE VIDEO ON YOUTUBE](#showcase-video-on-youtube)
   - [TECH USED](#tech-used)
+  - [LINKS](#links)
   - [DONATE](#donate)
 
 ## EXAMPLE
@@ -35,6 +36,11 @@ _icons generated via:_
 ```bash
 for size in 16 32 48 96 128; do magick icon.png -resize ${size}x${size} ${size}.png; done
 ```
+
+## LINKS
+
+- [Erecle at Chrome Web Store](https://chromewebstore.google.com/detail/erecle/agldilaoijmdgaopbaoppopjpjjjmdon)
+- [Erecle at Firefox Add-Ons](https://addons.mozilla.org/en-US/firefox/addon/erecle/)
 
 ## DONATE
 
