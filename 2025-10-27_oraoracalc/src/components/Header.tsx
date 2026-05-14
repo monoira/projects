@@ -1,5 +1,7 @@
 import { NavLink } from "react-router";
+import { useTranslation } from "react-i18next";
 
+import LanguageSwitcher from "./LanguageSwitcher";
 import styles from "./Header.module.css";
 
 const activeStyles: React.CSSProperties = {
@@ -12,15 +14,18 @@ const navActiveStylesFunction = ({ isActive }: { isActive: boolean }) => {
 };
 
 function Header() {
+  const { t } = useTranslation();
+
   return (
     <header>
       <nav className={styles.nav}>
         <NavLink style={navActiveStylesFunction} to={"/"}>
-          Home
+          {t("navigation.home")}
         </NavLink>
         <NavLink style={navActiveStylesFunction} to={"/formulas"}>
-          Formulas
+          {t("navigation.formulas")}
         </NavLink>
+        <LanguageSwitcher />
       </nav>
     </header>
   );

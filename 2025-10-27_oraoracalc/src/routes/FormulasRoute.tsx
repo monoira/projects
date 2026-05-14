@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import TypescriptCode from "../components/TSCode";
 import { formulasArray } from "../data/formulas";
 import SEO from "../components/SEO";
@@ -5,18 +6,20 @@ import SEO from "../components/SEO";
 import styles from "./FormulasRoute.module.css";
 
 function FormulasRoute() {
+  const { t } = useTranslation();
+
   return (
     <>
       <SEO
-        title="OraOraCalc Formulas - Math Formula Snippets Written In Typescript"
-        description="Quickly Calculate Percentages And Explore Practical TypeScript Math Implementations. Ideal For Students And Developers"
+        title={t("formulas.seo.title")}
+        description={t("formulas.seo.description")}
       />
 
       <div className={styles.topContainer}>
-        <h1>General Info</h1>
+        <h1>{t("formulas.generalInfo")}</h1>
         <div>
-          <i>Order of Operations</i> / <i>PADMAS</i>
-          <span> in </span>
+          <i>{t("formulas.orderOfOperations")}</i> / <i>PADMAS</i>
+          <span> {t("formulas.inJavascriptTypescript")} </span>
           <b>Javascript / Typescript</b>
           <ol>
             <li>()</li>
@@ -25,7 +28,7 @@ function FormulasRoute() {
             <li>+, -</li>
           </ol>
         </div>
-        <h2>Formulas In Typescript</h2>
+        <h2>{t("formulas.formulasInTypescript")}</h2>
       </div>
 
       <main>

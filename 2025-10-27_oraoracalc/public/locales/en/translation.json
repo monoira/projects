@@ -1,0 +1,36 @@
+{
+  "navigation": {
+    "home": "Home",
+    "formulas": "Formulas"
+  },
+  "messages": {
+    "loading": "Loading..."
+  },
+  "home": {
+    "seo": {
+      "title": "OraOraCalc - Percentage Calculator And TypeScript Math Snippets",
+      "description": "Your all-in-one tool for quick percentage calculations and TypeScript math exploration. Simple & effective."
+    },
+    "percentageInputLabel": "percentage of total number",
+    "numberInputLabel": "total number you want to get percentage of",
+    "of": "of",
+    "is": "is"
+  },
+  "formulas": {
+    "seo": {
+      "title": "OraOraCalc Formulas - Math Formula Snippets Written In TypeScript",
+      "description": "Quickly calculate percentages and explore practical TypeScript math implementations. Ideal for students and developers."
+    },
+    "generalInfo": "General Info",
+    "orderOfOperations": "Order of Operations",
+    "inJavascriptTypescript": "in Javascript / Typescript",
+    "formulasInTypescript": "Formulas In Typescript"
+  },
+  "copyButton": {
+    "copy": "Copy",
+    "copiedToClipboard": "{{name}} has been copied to clipboard."
+  },
+  "footer": {
+    "createdBy": "Created by"
+  }
+}

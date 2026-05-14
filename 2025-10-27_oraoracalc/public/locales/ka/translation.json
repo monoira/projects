@@ -1,0 +1,36 @@
+{
+  "navigation": {
+    "home": "მთავარი",
+    "formulas": "ფორმულები"
+  },
+  "messages": {
+    "loading": "იტვირთება..."
+  },
+  "home": {
+    "seo": {
+      "title": "OraOraCalc - პროცენტული კალკულატორი და TypeScript მათემატიკური მაგალითები",
+      "description": "თქვენი ყოვლისმომცველი ხელშეწყობა სწრაფი პროცენტული გამოთვლებისთვის და TypeScript მათემატიკური კვლევისთვის. მარტივი და ეფექტური."
+    },
+    "percentageInputLabel": "პროცენტი მთლიანი რიცხვის",
+    "numberInputLabel": "მთლიანი რიცხვი, რომლისგანაც პროცენტს ითვლით",
+    "of": "დან",
+    "is": "არის"
+  },
+  "formulas": {
+    "seo": {
+      "title": "OraOraCalc ფორმულები - TypeScript-ში მათემატიკური ფორმულების მაგალითები",
+      "description": "გაწყვიტეთ პროცენტების სწრაფი გამოთვლა და შეისწავლეთ პრაქტიკული TypeScript მათემატიკური განხორციელებები. იდეალურია სტუდენტებისთვის და შემქმნელებისთვის."
+    },
+    "generalInfo": "ზოგადი ინფორმაცია",
+    "orderOfOperations": "ოპერაციების თანმიმდევრობა",
+    "inJavascriptTypescript": "Javascript / Typescript-ში",
+    "formulasInTypescript": "ფორმულები TypeScript-ში"
+  },
+  "copyButton": {
+    "copy": "კოპირება",
+    "copiedToClipboard": "{{name}} კლიპბორდში გადაწერილია."
+  },
+  "footer": {
+    "createdBy": "შექმნილია"
+  }
+}

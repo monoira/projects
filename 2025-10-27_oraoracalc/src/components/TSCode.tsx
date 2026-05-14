@@ -4,6 +4,7 @@ import copy from "copy-to-clipboard";
 import toast from "react-hot-toast";
 import { Fade } from "react-awesome-reveal";
 import ShikiHighlighter from "react-shiki";
+import { useTranslation } from "react-i18next";
 
 export interface TypescriptFormulaProps {
   name: string;
@@ -15,10 +16,12 @@ export interface TypescriptFormulaProps {
  * @param name name of the typescript code snippet
  */
 function TypescriptCode({ code, name }: TypescriptFormulaProps) {
+  const { t } = useTranslation();
+
   const copyCodeToClipboard = () => {
     copy(code);
 
-    toast.success(`${name} Has been copied to clipboard.`, {
+    toast.success(t("copyButton.copiedToClipboard", { name }), {
       style: {
         maxWidth: "100vw",
       },
@@ -28,7 +31,7 @@ function TypescriptCode({ code, name }: TypescriptFormulaProps) {
   return (
     <Fade triggerOnce>
       <button onClick={copyCodeToClipboard} className={styles.copyBtn}>
-        Copy
+        {t("copyButton.copy")}
       </button>
       <ShikiHighlighter
         language="ts"

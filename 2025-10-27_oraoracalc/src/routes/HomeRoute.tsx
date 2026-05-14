@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import type { FormData } from "../types/types";
 import styles from "./HomeRoute.module.css";
 import SEO from "../components/SEO";
 
 function HomeRoute() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<FormData>({
     percentage: 20,
     number: 200,
@@ -19,8 +21,8 @@ function HomeRoute() {
   return (
     <>
       <SEO
-        title="OraOraCalc - Percentage Calculator And Typescript Math Snippets"
-        description="Your All-In-One Tool For Quick Percentage Calculations And TypeScript Math Exploration. Simple & Effective"
+        title={t("home.seo.title")}
+        description={t("home.seo.description")}
       />
       <main className={styles.main}>
         <div>
@@ -31,7 +33,7 @@ function HomeRoute() {
               }}
             >
               <input
-                aria-label="percentage of total number"
+                aria-label={t("home.percentageInputLabel")}
                 type="number"
                 name="percentage"
                 defaultValue={formData.percentage}
@@ -39,16 +41,16 @@ function HomeRoute() {
               />
               <span className={styles.span}>%</span>
             </div>
-            <div className={styles.span}>of</div>
+            <div className={styles.span}>{t("home.of")}</div>
           </div>
           <input
-            aria-label="total number you want to get percentage of"
+            aria-label={t("home.numberInputLabel")}
             type="number"
             name="number"
             defaultValue={formData.number}
             onChange={handleInputChange}
           />
-          <div className={styles.span}>is</div>
+          <div className={styles.span}>{t("home.is")}</div>
         </div>
 
         <div>

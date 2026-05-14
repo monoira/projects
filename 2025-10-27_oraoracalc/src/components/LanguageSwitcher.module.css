@@ -1,0 +1,8 @@
+.switcher {
+  border: 1px solid #cacaca;
+  border-radius: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  background: white;
+  color: #111;
+  font-size: 0.9rem;
+}
