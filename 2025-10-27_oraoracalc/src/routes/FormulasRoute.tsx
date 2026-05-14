@@ -19,8 +19,9 @@ function FormulasRoute() {
         <h1>{t("formulas.generalInfo")}</h1>
         <div>
           <i>{t("formulas.orderOfOperations")}</i> / <i>PADMAS</i>
-          <span> {t("formulas.inJavascriptTypescript")} </span>
-          <b>Javascript / Typescript</b>
+          <b>
+            <span> {t("formulas.inJavascriptTypescript")} </span>
+          </b>
           <ol>
             <li>()</li>
             <li>**</li>
