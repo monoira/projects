@@ -1,35 +1,30 @@
-/**
- * manages theme of the website by modifying <body> class.
- * uses localStorage
- */
+/** manages theme of the website by modifying <body> class. uses localStorage. */
 export class ThemeManager {
   constructor() {
-    this.defaultInitialTheme = "mode__dark";
-    this.current_localStorageSaved_theme = null;
+    this.defaultTheme = "mode__dark";
+    /** theme that's saved in LocalStorage */
+    this.savedTheme = null;
     this.loadThemeFromLocalStorage();
-    this.setBodyThemeViaClassUponInitialization();
+    this.setHTMLBodyThemeOnInitialization();
   }
 
   loadThemeFromLocalStorage() {
-    this.current_localStorageSaved_theme =
-      localStorage.getItem("theme") || this.defaultInitialTheme;
+    this.savedTheme = localStorage.getItem("theme") || this.defaultTheme;
   }
 
   saveThemeToLocalStorage() {
-    localStorage.setItem("theme", this.current_localStorageSaved_theme);
+    localStorage.setItem("theme", this.savedTheme);
   }
 
-  setBodyThemeViaClassUponInitialization() {
+  setHTMLBodyThemeOnInitialization() {
     document.body.classList.remove("mode__light", "mode__dark");
-    document.body.classList.add(this.current_localStorageSaved_theme);
+    document.body.classList.add(this.savedTheme);
   }
 
   toggleTheme() {
-    this.current_localStorageSaved_theme =
-      this.current_localStorageSaved_theme === "mode__dark"
-        ? "mode__light"
-        : "mode__dark";
-    this.setBodyThemeViaClassUponInitialization();
+    this.savedTheme =
+      this.savedTheme === "mode__dark" ? "mode__light" : "mode__dark";
+    this.setHTMLBodyThemeOnInitialization();
     this.saveThemeToLocalStorage();
   }
 }

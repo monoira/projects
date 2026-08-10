@@ -5,7 +5,7 @@ import { dishesArray } from "./dishesArray.js";
 const themeManager = new ThemeManager();
 
 document.addEventListener("DOMContentLoaded", () => {
-  themeManager.setBodyThemeViaClassUponInitialization.bind(themeManager);
+  themeManager.setHTMLBodyThemeOnInitialization.bind(themeManager);
 });
 
 window.addEventListener("load", () => {
@@ -29,12 +29,12 @@ function renderDishesInGrid(dishes) {
     const gridItem = document.createElement("div");
     gridItem.classList.add("main__dishes-grid__grid-item");
 
-    // Grid item name
+    // grid item name
     const gridItemName = document.createElement("div");
     gridItemName.classList.add("main__dishes-grid__grid-item__text");
     gridItemName.textContent = `${dish.name} - ${dish.price} ${dish.priceCurrency}`;
 
-    // Image container and image
+    // image container and image
     const gridItemImgContainer = document.createElement("div");
     const gridItemImg = document.createElement("img");
     gridItemImg.setAttribute("src", dish.relative_url);
