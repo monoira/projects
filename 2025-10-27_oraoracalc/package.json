@@ -42,7 +42,7 @@
     "globals": "^16.3.0",
     "i18next-cli": "^1.56.12",
     "prettier": "^3.6.2",
-    "sharp": "^0.34.2",
+    "sharp": "^0.35.3",
     "svgo": "^4.0.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
