@@ -1,9 +1,9 @@
 # Finished Projects Monorepo Repository
 
 Most of those projects are and will be web projects
-with some bash + GNU/Linux projects.
+with some bash + Linux projects.
 
-usual tech stack can be here:  
+Usual tech stack can be here:  
 [monoira/monoira](https://github.com/monoira/monoira)
 
 ## DONATE

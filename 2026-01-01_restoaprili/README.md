@@ -11,7 +11,8 @@
 
 ## website description
 
-Restaurant website. Uses OOP.
+Restaurant website.
+Uses OOP and vanilla javascript.
 
 ## build tool
 

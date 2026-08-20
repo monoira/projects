@@ -12,8 +12,7 @@
 
 ## website description
 
-Your all-in-one tool for quick percentage calculations
-and typescript math exploration.
+all-in-one tool for quick percentage calculations and typescript math exploration.
 Simple javascript and typescript math formulas and sorting algorithms
 
 ## build tool
