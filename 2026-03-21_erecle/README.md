@@ -23,7 +23,7 @@ Works with all amazon websites, like `.com`, `.co.uk`, etc that are listed here:
 
 ## SHOWCASE VIDEO ON YOUTUBE
 
-[![showcase demo](https://img.youtube.com/vi/F2tXCtZqEpE/maxresdefault.jpg)](https://www.youtube.com/watch?v=F2tXCtZqEpE)
+[![showcase demo](https://img.youtube.com/vi/JtYFB4oEitw/maxresdefault.jpg)](https://www.youtube.com/watch?v=JtYFB4oEitw)
 
 ## TECH USED
 
