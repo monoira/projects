@@ -3,23 +3,8 @@
 Most of those projects are and will be web projects
 with some bash + GNU/Linux projects.
 
-## USUAL TECH STACK
-
-| Tech                    | Name                 |
-| ----------------------- | -------------------- |
-| **Frontend Build Tool** | vite                 |
-| **Frontend**            | react w/ typescript  |
-| **Backend**             | nestjs w/ typescript |
-| **Web Extensions**      | WXT                  |
-| **Containerization**    | docker               |
-| **Formatter**           | prettier             |
-| **Linter**              | eslint               |
-
-- **MISC**
-  - MUI
-  - react-router
-  - react-hot-toast
-  - vite-plugin-image-optimizer
+usual tech stack can be here:  
+[monoira/monoira](https://github.com/monoira/monoira)
 
 ## DONATE
 
