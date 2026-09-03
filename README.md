@@ -3,7 +3,7 @@
 Most of those projects are and will be web projects
 with some bash + Linux projects.
 
-Usual tech stack can be here:  
+My usual tech stack can be found here:  
 [monoira/monoira](https://github.com/monoira/monoira)
 
 ## DONATE
