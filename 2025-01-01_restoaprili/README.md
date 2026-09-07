@@ -26,7 +26,6 @@ Uses OOP and vanilla javascript.
 
 ### dev dependencies
 
-- vite-plugin-image-optimizer - optimizes images in `public` dir on build
 - prettier
 
 ## fonts
