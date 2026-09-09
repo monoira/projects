@@ -1,6 +1,40 @@
-@import "modern-normalize/modern-normalize.css";
-
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@300..700&display=swap");
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+image,
+video,
+audio,
+svg,
+object,
+picture,
+canvas,
+iframe,
+embed {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* CSS RESET END */
 
 .mode__dark {
   /* colors */
@@ -43,44 +77,8 @@
   color: var(--clr-white);
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-button {
-  all: unset;
-  cursor: pointer;
-  border-radius: 8px;
-  padding: 8px 16px;
-  border: var(--border);
-  background: var(--clr-primary);
-  color: rgb(255, 255, 255);
-}
-
-a {
-  text-decoration: none;
-  color: var(--clr-text);
-}
-
-img,
-image,
-video,
-audio,
-svg,
-object {
-  display: block;
-  max-width: 100%;
-}
-
 body {
+  margin: 0;
   font-family: "Noto Serif Georgian", sans-serif;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -91,11 +89,6 @@ body {
     color 40ms ease-in-out;
   background: var(--clr-bg);
   color: var(--clr-text);
-}
-
-/* utility classes */
-.min-h-screen {
-  min-height: 100vh;
 }
 
 /* || normal css */
@@ -189,6 +182,10 @@ body {
 }
 
 /* || main */
+.main_container {
+  min-height: 100vh;
+}
+
 .main__img-section {
   min-height: 420px;
   background-position: bottom center;
@@ -239,8 +236,6 @@ body {
   }
 }
 
-/* main__dishes-h1 */
-
 .main__dishes-h1 {
   margin-top: 0px;
   font-weight: bold;
@@ -259,8 +254,6 @@ body {
   padding: 8px 16px;
   color: var(--clr-black);
 }
-
-/* main__dishes-grid */
 
 .main__dishes-grid {
   display: grid;

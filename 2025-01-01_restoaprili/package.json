@@ -1,5 +1,5 @@
 {
-  "name": "restoaprili",
+  "name": "Restoaprili",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -17,8 +17,5 @@
     "globals": "^16.0.0",
     "prettier": "^3.4.1",
     "vite": "^5.2.0"
-  },
-  "dependencies": {
-    "modern-normalize": "^3.0.1"
   }
 }
