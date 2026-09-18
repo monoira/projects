@@ -15,18 +15,23 @@ instead of their base redux toolkit versions
 
 ## internationalization
 
-uses react-i18next and i18next-cli for translations.
+uses react-i18next and i18next-cli for internationalization / translations
 
-if you edit or add to `/public/locales/`, run this to sync types:
+if you edit or add to `/public/locales/`, run this to sync types
 
 ```bash
 npm run i18n:extract
 ```
 
-always import translations as an array and use the full name:
+always import translations as an array
 
-```typescript
+```tsx
 const { t } = useTranslation(["common"]);
+return <div>{t("common:some")}</div>;
 ```
 
-`{t("common:some")}`
+always use full name
+
+```tsx
+return <div>{t("common:some")}</div>;
+```
