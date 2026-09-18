@@ -1,0 +1,25 @@
+{
+  "addExercise": "Add Exercise",
+  "copy": "Copy",
+  "copySuccess": "URL copied to clipboard",
+  "days": {
+    "friday": "Friday",
+    "monday": "Monday",
+    "newDay": "New Day",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "thursday": "Thursday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday"
+  },
+  "programName": "Program Name",
+  "programSummary": "Program Summary",
+  "removeExercise": "Remove exercise",
+  "removeSet": "Remove set",
+  "reps": "Reps",
+  "restDay": "Rest Day",
+  "save": "Save",
+  "sets": "Sets",
+  "title": "Gym Program Builder",
+  "weight": "Weight (kg)"
+}

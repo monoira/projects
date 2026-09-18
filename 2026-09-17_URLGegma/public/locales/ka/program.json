@@ -1,0 +1,25 @@
+{
+  "addExercise": "ვარჯიშის დამატება",
+  "copy": "კოპირება",
+  "copySuccess": "URL დაკოპირებულია",
+  "days": {
+    "friday": "პარასკევი",
+    "monday": "ორშაბათი",
+    "newDay": "ახალი დღე",
+    "saturday": "შაბათი",
+    "sunday": "კვირა",
+    "thursday": "ხუთშაბათი",
+    "tuesday": "სამშაბათი",
+    "wednesday": "ოთხშაბათი"
+  },
+  "programName": "პროგრამის სახელი",
+  "programSummary": "პროგრამა",
+  "removeExercise": "ვარჯიშის წაშლა",
+  "removeSet": "სეთის წაშლა",
+  "reps": "გამეორება",
+  "restDay": "დასვენების დღე",
+  "save": "შენახვა",
+  "sets": "სეტები",
+  "title": "პროგრამის შემქმნელი",
+  "weight": "წონა (კგ)"
+}

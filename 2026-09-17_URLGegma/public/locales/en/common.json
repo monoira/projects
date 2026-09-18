@@ -1,0 +1,14 @@
+{
+  "colorSchemes": {
+    "dark": "Dark Scheme",
+    "light": "Light Scheme"
+  },
+  "englishFlag": "English flag",
+  "error": "error",
+  "georgianFlag": "Georgian flag",
+  "languages": {
+    "en": "English",
+    "ka": "Georgian"
+  },
+  "loading": "Loading..."
+}
