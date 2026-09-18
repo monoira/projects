@@ -1,4 +1,12 @@
 {
+  "examples": "Examples",
+  "hero": {
+    "alt": "image, which is showcasing how site works",
+    "description": "You can easily share or bookmark URL link of the workout program",
+    "endpointLabel": "Program can be accessed from following endpoint:",
+    "subtitle": "Create gym program and upon saving it, URLGegma will create hash of it",
+    "title": "URLGegma is a gym program creator"
+  },
   "htmlTag": {
     "description": "Gym program and workout plan builder",
     "title": "URLGegma"
