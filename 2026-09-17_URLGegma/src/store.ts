@@ -9,10 +9,6 @@ export const store = configureStore({
   },
 });
 
-if (typeof window !== "undefined") {
-  (window as unknown as { __store__: typeof store }).__store__ = store;
-}
-
 // boilerplate. at the very bottom.
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
