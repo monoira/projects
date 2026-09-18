@@ -24,8 +24,6 @@ function HomeRoute() {
         </Typography>
         <Typography>{t("home:hero.subtitle")}</Typography>
         <Typography>{t("home:hero.description")}</Typography>
-        <Typography>{t("home:hero.endpointLabel")}</Typography>
-        <Typography sx={{ fontWeight: "bold" }}>/program/HASH</Typography>
         <Box
           component="img"
           src={heroImage}

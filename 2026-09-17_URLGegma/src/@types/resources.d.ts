@@ -22,9 +22,8 @@ export default interface Resources {
     hero: {
       alt: "image, which is showcasing how site works";
       description: "You can easily share or bookmark URL link of the workout program";
-      endpointLabel: "Program can be accessed from following endpoint:";
       subtitle: "Create gym program and upon saving it, URLGegma will create hash of it";
-      title: "URLGegma is a gym program creator";
+      title: "URLGegma is a webapp for creating gym programs";
     };
     htmlTag: {
       description: "Gym program and workout plan builder";
