@@ -13,6 +13,63 @@ react-router in Data Mode for routing
 always use useAppDispatch, useAppSelector and useAppStore located at src/hooks.ts
 instead of their base redux toolkit versions
 
+## material ui
+
+write color tokens in the string
+
+```tsx
+<Button
+  sx={{
+    color: "primary.main",
+    fontWeight: "bold",
+    boxShadow: 1,
+  }}
+>
+  button
+</Button>
+```
+
+color tokens:
+
+```txt
+primary.main
+primary.light
+primary.dark
+primary.contrastText
+
+secondary.main
+secondary.light
+secondary.dark
+secondary.contrastText
+
+error.main
+error.light
+error.dark
+error.contrastText
+
+warning.main
+warning.light
+warning.dark
+warning.contrastText
+
+info.main
+info.light
+info.dark
+info.contrastText
+
+success.main
+success.light
+success.dark
+success.contrastText
+
+text.primary
+text.secondary
+text.disabled
+
+common.black
+common.white
+```
+
 ## internationalization
 
 uses react-i18next and i18next-cli for internationalization / translations
