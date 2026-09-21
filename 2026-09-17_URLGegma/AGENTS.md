@@ -13,7 +13,7 @@ react-router in Data Mode for routing
 always use useAppDispatch, useAppSelector and useAppStore located at src/hooks.ts
 instead of their base redux toolkit versions
 
-## material ui
+## material-ui
 
 write color tokens in the string
 
