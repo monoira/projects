@@ -1,6 +1,6 @@
 # erecle
 
-Ereader-Url-Cleaner is an extension that cleans amazon kindle URLs by removing excess query parameters
+Ereader-Url-Cleaner is a browser extension that cleans amazon kindle URLs by removing excess query parameters
 into more readable, cleaner and easily bookmarkable format.
 
 - [erecle](#erecle)
@@ -27,9 +27,9 @@ Works with all amazon websites, like `.com`, `.co.uk`, etc that are listed here:
 
 ## TECH USED
 
-- [wxt](https://wxt.dev/guide/introduction.html)
-- reactjs
-- typescript
+- [WXT](https://wxt.dev/guide/introduction.html)
+- React
+- Typescript
 
 _icons generated via:_
 
