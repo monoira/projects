@@ -2,10 +2,6 @@
 export default interface Resources {
   buttons: {};
   common: {
-    colorSchemes: {
-      dark: "Dark Scheme";
-      light: "Light Scheme";
-    };
     englishFlag: "English flag";
     error: "error";
     georgianFlag: "Georgian flag";
@@ -14,6 +10,10 @@ export default interface Resources {
       ka: "Georgian";
     };
     loading: "Loading...";
+    mode: {
+      dark: "Dark Mode";
+      light: "Light Mode";
+    };
   };
   errors: {};
   forms: {};
@@ -21,8 +21,8 @@ export default interface Resources {
     examples: "Examples";
     hero: {
       alt: "image, which is showcasing how site works";
-      description: "You can easily share or bookmark URL link of the workout program";
-      subtitle: "Create gym program and upon saving it, URLGegma will create hash of it";
+      description: "You can easily share or bookmark URL link of the workout program.";
+      subtitle: "Create gym program and upon saving it, URLGegma will create hash of it.";
       title: "URLGegma is a webapp for creating gym programs";
     };
     htmlTag: {

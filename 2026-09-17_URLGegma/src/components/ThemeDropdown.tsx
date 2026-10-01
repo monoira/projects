@@ -1,20 +1,17 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { IconButton, Menu, MenuItem } from "@mui/material";
-import {
-  setColorScheme,
-  type ColorScheme,
-} from "../features/colorScheme/colorSchemeSlice";
-import { useAppDispatch } from "../hooks";
+import { useColorScheme } from "@mui/material/styles";
 import Palette from "@mui/icons-material/Palette";
+import type { Mode } from "../AppThemeProvider";
 
-function ColorSchemeDropdown() {
+function ThemeDropdown() {
   const { t } = useTranslation(["common"]);
-  const dispatch = useAppDispatch();
+  const { mode, setMode } = useColorScheme();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
-  const changeColorScheme = (scheme: ColorScheme) => {
-    dispatch(setColorScheme(scheme));
+  const changeMode = (newMode: Mode) => {
+    setMode(newMode);
     setAnchorEl(null);
   };
 
@@ -31,14 +28,18 @@ function ColorSchemeDropdown() {
         open={Boolean(anchorEl)}
         onClose={() => setAnchorEl(null)}
       >
-        <MenuItem onClick={() => changeColorScheme("dark")}>
-          {t("common:colorSchemes.dark")}
+        <MenuItem selected={mode === "dark"} onClick={() => changeMode("dark")}>
+          {t("common:mode.dark")}
         </MenuItem>
-        <MenuItem onClick={() => changeColorScheme("light")}>
-          {t("common:colorSchemes.light")}
+        <MenuItem
+          selected={mode === "light"}
+          onClick={() => changeMode("light")}
+        >
+          {t("common:mode.light")}
         </MenuItem>
       </Menu>
     </>
   );
 }
-export default ColorSchemeDropdown;
+
+export default ThemeDropdown;

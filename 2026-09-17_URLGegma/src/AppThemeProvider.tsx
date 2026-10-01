@@ -1,18 +1,21 @@
-import React from "react";
 import { CssBaseline, GlobalStyles } from "@mui/material";
 import type { LinkProps } from "@mui/material/Link";
 import {
   StyledEngineProvider,
   ThemeProvider,
   createTheme,
+  useColorScheme,
 } from "@mui/material/styles";
+import { forwardRef, type ReactNode } from "react";
 import {
   Link as RouterLink,
   type LinkProps as RouterLinkProps,
 } from "react-router";
-import { useAppSelector } from "./hooks";
 
-const LinkBehavior = React.forwardRef<
+// combining RouterLink into MUI Link component
+// https://mui.com/material-ui/integrations/routing/#global-theme-link
+
+const LinkBehavior = forwardRef<
   HTMLAnchorElement,
   Omit<RouterLinkProps, "to"> & { href: RouterLinkProps["to"] }
 >((props, ref) => {
@@ -20,29 +23,33 @@ const LinkBehavior = React.forwardRef<
   return <RouterLink ref={ref} to={href} {...other} />;
 });
 
-function AppThemeProvider({ children }: { children: React.ReactNode }) {
-  const colorScheme = useAppSelector((state) => state.colorScheme.colorScheme);
-  const theme = createTheme({
-    cssVariables: true,
-    palette: {
-      mode: colorScheme,
-      primary: { main: "#9e1030" },
-      secondary: { main: "#12544F" },
-    },
-    components: {
-      MuiLink: {
-        defaultProps: {
-          component: LinkBehavior,
-        } as LinkProps,
-      },
-      MuiButtonBase: {
-        defaultProps: {
-          LinkComponent: LinkBehavior,
-        },
-      },
-    },
-  });
+// colorScheme / theme / mode
 
+export type Mode = NonNullable<ReturnType<typeof useColorScheme>["mode"]>;
+
+const theme = createTheme({
+  cssVariables: { colorSchemeSelector: "class" },
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: { main: "#9e1030" },
+        secondary: { main: "#12544F" },
+      },
+    },
+    dark: {
+      palette: {
+        primary: { main: "#9e1030" },
+        secondary: { main: "#12544F" },
+      },
+    },
+  },
+  components: {
+    MuiLink: { defaultProps: { component: LinkBehavior } as LinkProps },
+    MuiButtonBase: { defaultProps: { LinkComponent: LinkBehavior } },
+  },
+});
+
+function AppThemeProvider({ children }: { children: ReactNode }) {
   return (
     <StyledEngineProvider enableCssLayer>
       <ThemeProvider theme={theme}>

@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router";
 import { Box, Link, Stack, type SxProps, type Theme } from "@mui/material";
-import ColorSchemeDropdown from "./ColorSchemeDropdown";
+import ThemeDropdown from "./ThemeDropdown";
 import LanguageChangeDropdown from "./LanguageChangeDropdown";
 
 const navLinkStyles: SxProps<Theme> = {
@@ -54,7 +54,7 @@ function Header() {
       </Stack>
       <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
         <LanguageChangeDropdown />
-        <ColorSchemeDropdown />
+        <ThemeDropdown />
       </Stack>
     </Box>
   );
