@@ -2,6 +2,7 @@
 export default interface Resources {
   buttons: {};
   common: {
+    author: "monoira";
     englishFlag: "English flag";
     error: "error";
     georgianFlag: "Georgian flag";
@@ -18,6 +19,10 @@ export default interface Resources {
   errors: {};
   forms: {};
   home: {
+    examplePrograms: {
+      pushPullLegs: "Push Pull Legs 6-Day Split";
+      vTaper: "My V-Taper Gym Program";
+    };
     examples: "Examples";
     hero: {
       alt: "image, which is showcasing how site works";

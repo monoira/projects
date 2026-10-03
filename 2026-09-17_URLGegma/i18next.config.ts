@@ -7,4 +7,7 @@ export default defineConfig({
     output: "public/locales/{{language}}/{{namespace}}.json",
     defaultNS: "common",
   },
+  lint: {
+    acceptedTags: "all",
+  },
 });

@@ -1,6 +1,9 @@
 import { Box, Link } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation(["common"]);
+
   return (
     <Box
       component="footer"
@@ -14,7 +17,7 @@ function Footer() {
       }}
     >
       <Link href="https://github.com/monoira" target="_blank">
-        monoira
+        {t("common:author")}
       </Link>
     </Box>
   );
