@@ -10,7 +10,7 @@ import {
   Button,
   CircularProgress,
   Container,
-  Link as MuiLink,
+  Link,
   Stack,
   TextField,
   Typography,
@@ -149,7 +149,7 @@ function LoginRoute() {
             variant="body2"
           >
             {t("login:newHere")}{" "}
-            <MuiLink href="/register">{t("login:registerLink")}</MuiLink>
+            <Link href="/register">{t("login:registerLink")}</Link>
           </Typography>
         </Box>
       </Container>
