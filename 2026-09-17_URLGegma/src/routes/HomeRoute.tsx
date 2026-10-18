@@ -1,7 +1,7 @@
 import { Box, Container, Link, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import SEO from "../components/SEO";
-import heroImage from "../assets/hero.png";
+import heroImage from "../assets/images/hero.png";
 
 function HomeRoute() {
   const { t } = useTranslation(["home"]);
