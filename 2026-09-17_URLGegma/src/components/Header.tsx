@@ -32,23 +32,11 @@ function Header() {
       }}
     >
       <Stack component="nav" direction="row">
-        <Link
-          component={NavLink}
-          end
-          to="/"
-          underline="none"
-          sx={navLinkStyles}
-        >
+        <Link component={NavLink} end to="/" underline="none" sx={navLinkStyles}>
           {t("navigation:home")}
         </Link>
 
-        <Link
-          component={NavLink}
-          end
-          to="/program"
-          underline="none"
-          sx={navLinkStyles}
-        >
+        <Link component={NavLink} end to="/program" underline="none" sx={navLinkStyles}>
           {t("navigation:program")}
         </Link>
       </Stack>

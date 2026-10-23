@@ -8,9 +8,7 @@ export function useHasUnsavedChanges(): boolean {
   const savedParam = params.encoded;
 
   if (!savedParam) {
-    return (
-      program.name !== "" || program.days.some((d) => d.exercises.length > 0)
-    );
+    return program.name !== "" || program.days.some((d) => d.exercises.length > 0);
   }
 
   return compressProgram(program) !== savedParam;

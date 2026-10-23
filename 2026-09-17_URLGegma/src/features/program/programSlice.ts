@@ -1,15 +1,7 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { Program, ExerciseSet } from "../../types/program";
 
-const DEFAULT_DAYS = [
-  "monday",
-  "tuesday",
-  "wednesday",
-  "thursday",
-  "friday",
-  "saturday",
-  "sunday",
-];
+const DEFAULT_DAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 
 export const initialState: Program = {
   name: "",
@@ -21,8 +13,7 @@ export const initialState: Program = {
   })),
 };
 
-const findDay = (state: Program, dayId: string) =>
-  state.days.find((d) => d.id === dayId);
+const findDay = (state: Program, dayId: string) => state.days.find((d) => d.id === dayId);
 const findExercise = (state: Program, dayId: string, exerciseId: string) =>
   findDay(state, dayId)?.exercises.find((e) => e.id === exerciseId);
 
@@ -60,15 +51,10 @@ const programSlice = createSlice({
         });
       }
     },
-    removeExercise: (
-      state,
-      action: PayloadAction<{ dayId: string; exerciseId: string }>,
-    ) => {
+    removeExercise: (state, action: PayloadAction<{ dayId: string; exerciseId: string }>) => {
       const day = findDay(state, action.payload.dayId);
       if (day) {
-        day.exercises = day.exercises.filter(
-          (e) => e.id !== action.payload.exerciseId,
-        );
+        day.exercises = day.exercises.filter((e) => e.id !== action.payload.exerciseId);
       }
     },
     renameExercise: (
@@ -79,22 +65,11 @@ const programSlice = createSlice({
         name: string;
       }>,
     ) => {
-      const exercise = findExercise(
-        state,
-        action.payload.dayId,
-        action.payload.exerciseId,
-      );
+      const exercise = findExercise(state, action.payload.dayId, action.payload.exerciseId);
       if (exercise) exercise.name = action.payload.name;
     },
-    addSet: (
-      state,
-      action: PayloadAction<{ dayId: string; exerciseId: string }>,
-    ) => {
-      const exercise = findExercise(
-        state,
-        action.payload.dayId,
-        action.payload.exerciseId,
-      );
+    addSet: (state, action: PayloadAction<{ dayId: string; exerciseId: string }>) => {
+      const exercise = findExercise(state, action.payload.dayId, action.payload.exerciseId);
       if (exercise) exercise.sets.push({ reps: 0, weight: null, sets: 1 });
     },
     removeSet: (
@@ -105,11 +80,7 @@ const programSlice = createSlice({
         setIndex: number;
       }>,
     ) => {
-      const exercise = findExercise(
-        state,
-        action.payload.dayId,
-        action.payload.exerciseId,
-      );
+      const exercise = findExercise(state, action.payload.dayId, action.payload.exerciseId);
       if (exercise) exercise.sets.splice(action.payload.setIndex, 1);
     },
     updateSet: (
@@ -121,16 +92,9 @@ const programSlice = createSlice({
         updates: Partial<ExerciseSet>;
       }>,
     ) => {
-      const exercise = findExercise(
-        state,
-        action.payload.dayId,
-        action.payload.exerciseId,
-      );
+      const exercise = findExercise(state, action.payload.dayId, action.payload.exerciseId);
       if (exercise && exercise.sets[action.payload.setIndex]) {
-        Object.assign(
-          exercise.sets[action.payload.setIndex],
-          action.payload.updates,
-        );
+        Object.assign(exercise.sets[action.payload.setIndex], action.payload.updates);
       }
     },
 

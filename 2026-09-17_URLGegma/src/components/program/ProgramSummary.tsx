@@ -1,13 +1,5 @@
 import { useAppSelector } from "../../hooks";
-import {
-  Chip,
-  List,
-  ListItem,
-  ListItemText,
-  Paper,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Chip, List, ListItem, ListItemText, Paper, Stack, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { useDayTranslation } from "../../utils/dayTranslation";
 
@@ -26,16 +18,8 @@ export function ProgramSummary() {
       <Paper sx={{ p: 2, mb: 2 }}>
         <Stack spacing={1} sx={{ mt: 1 }}>
           {days.map((day) => (
-            <Stack
-              key={day.id}
-              direction="row"
-              spacing={1}
-              sx={{ alignItems: "baseline" }}
-            >
-              <Typography
-                variant="subtitle2"
-                sx={{ minWidth: 96, textTransform: "capitalize" }}
-              >
+            <Stack key={day.id} direction="row" spacing={1} sx={{ alignItems: "baseline" }}>
+              <Typography variant="subtitle2" sx={{ minWidth: 96, textTransform: "capitalize" }}>
                 {translateDay(day.name)}
               </Typography>
               {day.restDay ? (
@@ -50,9 +34,7 @@ export function ProgramSummary() {
 
                     return (
                       <ListItem key={exercise.id} disableGutters>
-                        <ListItemText
-                          primary={`${exercise.name} ${details}`.trim()}
-                        />
+                        <ListItemText primary={`${exercise.name} ${details}`.trim()} />
                       </ListItem>
                     );
                   })}

@@ -54,27 +54,18 @@ export function ProgramDayList() {
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
       {days.map((day) => (
         <Paper key={day.id} sx={{ p: 2, opacity: day.restDay ? 0.5 : 1 }}>
-          <Stack
-            direction="row"
-            sx={{ justifyContent: "space-between", alignItems: "center" }}
-          >
+          <Stack direction="row" sx={{ justifyContent: "space-between", alignItems: "center" }}>
             <Typography variant="h6" sx={{ textTransform: "capitalize" }}>
               {translateDay(day.name)}
             </Typography>
             <FormControlLabel
               control={
-                <Checkbox
-                  checked={day.restDay}
-                  onChange={() => dispatch(toggleRestDay(day.id))}
-                />
+                <Checkbox checked={day.restDay} onChange={() => dispatch(toggleRestDay(day.id))} />
               }
               label={t("program:restDay")}
             />
           </Stack>
-          <Stack
-            spacing={1}
-            sx={{ mt: 2, pointerEvents: day.restDay ? "none" : "auto" }}
-          >
+          <Stack spacing={1} sx={{ mt: 2, pointerEvents: day.restDay ? "none" : "auto" }}>
             {day.exercises.map((exercise) => (
               <Stack
                 key={exercise.id}
@@ -86,11 +77,7 @@ export function ProgramDayList() {
                   borderRadius: 1,
                 }}
               >
-                <Stack
-                  direction="row"
-                  spacing={1}
-                  sx={{ alignItems: "center" }}
-                >
+                <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
                   <TextField
                     value={exercise.name}
                     onChange={(e) =>
@@ -120,12 +107,7 @@ export function ProgramDayList() {
                 </Stack>
                 <Stack spacing={0.5}>
                   {exercise.sets.map((set, index) => (
-                    <Stack
-                      key={index}
-                      direction="row"
-                      spacing={1}
-                      sx={{ alignItems: "center" }}
-                    >
+                    <Stack key={index} direction="row" spacing={1} sx={{ alignItems: "center" }}>
                       {setFields.map(({ key, label, parse }) => (
                         <TextField
                           key={key}
@@ -164,10 +146,7 @@ export function ProgramDayList() {
                 </Stack>
               </Stack>
             ))}
-            <Button
-              variant="outlined"
-              onClick={() => dispatch(addExercise(day.id))}
-            >
+            <Button variant="outlined" onClick={() => dispatch(addExercise(day.id))}>
               {t("program:addExercise")}
             </Button>
           </Stack>

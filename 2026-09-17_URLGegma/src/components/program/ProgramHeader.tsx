@@ -48,11 +48,7 @@ export function ProgramHeader() {
         >
           {t("program:copy")}
         </Button>
-        <Snackbar
-          open={open}
-          autoHideDuration={3000}
-          onClose={() => setOpen(false)}
-        >
+        <Snackbar open={open} autoHideDuration={3000} onClose={() => setOpen(false)}>
           <Alert severity="success">{t("program:copySuccess")}</Alert>
         </Snackbar>
       </Box>

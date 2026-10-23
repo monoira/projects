@@ -8,17 +8,10 @@ function HomeRoute() {
 
   return (
     <>
-      <SEO
-        title={t("home:htmlTag.title")}
-        description={t("home:htmlTag.description")}
-      />
+      <SEO title={t("home:htmlTag.title")} description={t("home:htmlTag.description")} />
 
       <Container component="main" sx={{ paddingY: "5vh" }}>
-        <Typography
-          component="h1"
-          variant="h4"
-          sx={{ fontWeight: "bold", marginBottom: "16px" }}
-        >
+        <Typography component="h1" variant="h4" sx={{ fontWeight: "bold", marginBottom: "16px" }}>
           {t("home:hero.title")}
         </Typography>
         <Typography>{t("home:hero.subtitle")}</Typography>
@@ -34,11 +27,7 @@ function HomeRoute() {
             boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
           }}
         />
-        <Typography
-          component="h2"
-          variant="h4"
-          sx={{ marginTop: "32px", paddingBottom: "16px" }}
-        >
+        <Typography component="h2" variant="h4" sx={{ marginTop: "32px", paddingBottom: "16px" }}>
           {t("home:examples")}:
         </Typography>
         <Typography>

@@ -2,9 +2,7 @@ import { createBrowserRouter } from "react-router";
 import type { ComponentType } from "react";
 
 // boilerplate needed for lazy loading routes
-function lazyRoute<T extends { default: ComponentType }>(
-  load: () => Promise<T>,
-) {
+function lazyRoute<T extends { default: ComponentType }>(load: () => Promise<T>) {
   return async () => {
     const { default: Component, ...rest } = await load();
     return { Component, ...rest };

@@ -7,10 +7,7 @@ import {
   useColorScheme,
 } from "@mui/material/styles";
 import { forwardRef, type ReactNode } from "react";
-import {
-  Link as RouterLink,
-  type LinkProps as RouterLinkProps,
-} from "react-router";
+import { Link as RouterLink, type LinkProps as RouterLinkProps } from "react-router";
 
 // combining RouterLink into MUI Link component
 // https://mui.com/material-ui/integrations/routing/#global-theme-link

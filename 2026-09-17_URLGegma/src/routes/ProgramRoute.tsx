@@ -31,9 +31,7 @@ export default function ProgramRoute() {
     <>
       <SEO
         title={
-          program.name
-            ? `${t("home:htmlTag.title")} - ${program.name}`
-            : t("home:htmlTag.title")
+          program.name ? `${t("home:htmlTag.title")} - ${program.name}` : t("home:htmlTag.title")
         }
         description={
           program.name
@@ -42,10 +40,7 @@ export default function ProgramRoute() {
         }
       />
 
-      <Container
-        component="main"
-        sx={{ display: "flex", flexDirection: "column", gap: 2, p: 2 }}
-      >
+      <Container component="main" sx={{ display: "flex", flexDirection: "column", gap: 2, p: 2 }}>
         <ProgramSummary />
         <Typography
           variant="h2"
